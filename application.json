@@ -18,6 +18,10 @@
     {
       "id": "Dashboard",
       "isDefault": true
+    },
+    {
+      "id": "Public.account",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

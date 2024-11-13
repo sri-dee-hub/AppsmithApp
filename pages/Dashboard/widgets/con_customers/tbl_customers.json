@@ -40,10 +40,9 @@
     "phone",
     "fraud_score",
     "wallet_balance",
-    "status",
-    "EditActions1"
+    "status"
   ],
-  "columnUpdatedAt": 1697426737994,
+  "columnUpdatedAt": 1731476193305,
   "columnWidthMap": {
     "email": 185,
     "first_name": 165
@@ -97,31 +96,9 @@
     },
     {
       "key": "primaryColumns.status.computedValue"
-    },
-    {
-      "key": "primaryColumns.EditActions1.saveButtonColor"
-    },
-    {
-      "key": "primaryColumns.EditActions1.saveBorderRadius"
-    },
-    {
-      "key": "primaryColumns.EditActions1.discardBorderRadius"
-    },
-    {
-      "key": "primaryColumns.EditActions1.isSaveDisabled"
-    },
-    {
-      "key": "primaryColumns.EditActions1.isDiscardDisabled"
     }
   ],
-  "dynamicPropertyPathList": [
-    {
-      "key": "primaryColumns.EditActions1.isSaveDisabled"
-    },
-    {
-      "key": "primaryColumns.EditActions1.isDiscardDisabled"
-    }
-  ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onPageChange"
@@ -136,9 +113,6 @@
       "key": "onAddNewRowSave"
     },
     {
-      "key": "primaryColumns.EditActions1.onSave"
-    },
-    {
       "key": "onRowSelected"
     }
   ],
@@ -148,7 +122,7 @@
   "hideCard": false,
   "horizontalAlignment": "LEFT",
   "iconSVG": "https://appcdn.appsmith.com/static/media/icon.e6911f8bb94dc6c4a102a74740c41763.svg",
-  "inlineEditingSaveOption": "ROW_LEVEL",
+  "inlineEditingSaveOption": "CUSTOM",
   "isDeprecated": false,
   "isLoading": false,
   "isSortable": true,
@@ -176,46 +150,6 @@
   "parentRowSpace": 10,
   "primaryColumnId": "id",
   "primaryColumns": {
-    "EditActions1": {
-      "alias": "EditActions1",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "buttonStyle": "rgb(3, 179, 101)",
-      "columnType": "editActions",
-      "computedValue": "",
-      "discardActionLabel": "Discard",
-      "discardBorderRadius": "{{tbl_customers.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
-      "discardButtonColor": "#F22B2B",
-      "discardButtonVariant": "TERTIARY",
-      "discardIconAlign": "left",
-      "enableFilter": true,
-      "enableSort": true,
-      "horizontalAlignment": "LEFT",
-      "id": "EditActions1",
-      "index": 9,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": true,
-      "isDisabled": false,
-      "isDiscardDisabled": "{{tbl_customers.processedTableData.map((currentRow, currentIndex) => ( !tbl_customers.updatedRowIndices.includes(currentIndex)))}}",
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveDisabled": "{{tbl_customers.processedTableData.map((currentRow, currentIndex) => ( !tbl_customers.updatedRowIndices.includes(currentIndex)))}}",
-      "isSaveVisible": true,
-      "isVisible": false,
-      "label": "Save / Discard",
-      "onSave": "{{Update_public_customer1.run(() => {\n            showAlert(\"Successfully saved!\");\n            fetch_customers.run()\n          }, () => {\n            showAlert(\"Unable to save!\");\n          })}}",
-      "originalId": "EditActions1",
-      "saveActionLabel": "Save",
-      "saveBorderRadius": "{{tbl_customers.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
-      "saveButtonColor": "{{tbl_customers.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
-      "saveIconAlign": "left",
-      "sticky": "right",
-      "textSize": "0.875rem",
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
     "email": {
       "alias": "email",
       "allowCellWrapping": false,
